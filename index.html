@@ -3,123 +3,1219 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ruleta Logistica | Stellantis</title>
+<title>Escuelita Stellantis | Capacitación</title>
+
 <style>
-:root{--navy:#102a43;--blue:#1464a5;--cyan:#21b6c7;--gold:#ffca3a;--bg:#f2f6fb;--ink:#183047}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#e4f4fb,#f4f6fb 55%,#e8eef6);font-family:Arial,Helvetica,sans-serif;color:var(--ink);min-height:100vh}
-header{background:linear-gradient(110deg,#102a43,#145b91);color:white;padding:20px 5vw;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:0 5px 18px #102a4325}
-.brand{font-weight:900;letter-spacing:1px;font-size:clamp(18px,3vw,25px)}.brand span{color:#5ee2e7}.tag{font-size:12px;opacity:.85;text-align:right}
-main{max-width:980px;margin:30px auto;padding:0 18px 40px}
-.panel{background:white;border-radius:24px;padding:clamp(20px,4vw,36px);box-shadow:0 14px 40px #18304715;border:1px solid #e4ebf2}
-h1{font-size:clamp(27px,5vw,42px);margin:0 0 10px;color:var(--navy)}.sub{color:#61788d;line-height:1.5;margin:0 0 24px}
-.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:13px}
-.cat{border:0;border-radius:16px;padding:17px;color:white;text-align:left;cursor:pointer;min-height:88px;transition:.18s;box-shadow:0 5px 12px #102a4318}
-.cat:hover{transform:translateY(-3px);filter:brightness(1.06)}.cat strong{display:block;font-size:17px;margin-bottom:5px}.cat small{opacity:.9}
-.all{background:linear-gradient(120deg,#102a43,#2377b9);grid-column:1/-1;min-height:65px}
-.safety{background:#e34e58}.aperturado{background:#805ad5}.criticos{background:#e88b27}.recepcion{background:#169c91}.cuenta{background:#3378c8}.abassamento{background:#b34d91}.sistema{background:#60758c}
-.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
-.pill{background:#eaf3fa;color:#17517e;padding:8px 13px;border-radius:99px;font-weight:700;font-size:13px}
-.score{font-weight:800;color:#176d61}.progress{height:9px;background:#e9eff5;border-radius:99px;overflow:hidden;margin:12px 0 26px}.bar{height:100%;background:linear-gradient(90deg,#20b6c7,#1464a5);width:0%;transition:width .25s}
-.qnum{font-size:13px;color:#7890a4;font-weight:700;text-transform:uppercase;letter-spacing:1px}
-.question{font-size:clamp(21px,3.5vw,29px);line-height:1.3;color:#102a43;margin:12px 0 24px;font-weight:800}
-.answers{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.answer{border:2px solid #e1eaf2;background:#fff;border-radius:14px;padding:16px;text-align:left;font-size:16px;line-height:1.35;color:#24445e;cursor:pointer;min-height:75px;transition:.15s}
-.answer:hover:not(:disabled){border-color:#2999c5;background:#f4fbff}.answer:disabled{cursor:default}
-.answer.correct{border-color:#1b9b68;background:#e9f8f1;color:#126344;font-weight:700}
-.answer.wrong{border-color:#dc5962;background:#fff0f0;color:#a42d38}
-.feedback{margin-top:18px;padding:15px 17px;border-radius:13px;line-height:1.45;font-weight:700;display:none}
-.feedback.good{display:block;background:#e9f8f1;color:#126344}.feedback.bad{display:block;background:#fff0f0;color:#a42d38}
-.actions{display:flex;justify-content:space-between;gap:12px;margin-top:22px;flex-wrap:wrap}
-button.primary,button.secondary{border:0;border-radius:12px;padding:13px 20px;font-size:15px;font-weight:800;cursor:pointer}
-.primary{background:#1464a5;color:white}.primary:hover{background:#0f4e82}.secondary{background:#eaf1f7;color:#24445e}
-.result{text-align:center}.medal{font-size:64px;margin:8px}.bigscore{font-size:clamp(40px,8vw,66px);font-weight:900;color:#1464a5;margin:8px}
-.hidden{display:none!important}.result p{color:#61788d;line-height:1.5}
-@media(max-width:620px){.answers{grid-template-columns:1fr}.all{grid-column:auto}header{align-items:flex-start;flex-direction:column}.tag{text-align:left}}
+:root {
+    --azul: #102b50;
+    --azul2: #174779;
+    --celeste: #2585d5;
+    --fondo: #f2f5f9;
+    --verde: #16864b;
+    --rojo: #d93636;
+    --texto: #243247;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
+header {
+    background: var(--azul);
+    color: white;
+    padding: 23px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: 0 3px 12px #0002;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background: #ffffff18;
+    border: 1px solid #ffffff35;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 23px;
+}
+
+.logo h1 {
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    color: #b9d6f4;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.header-label {
+    font-size: 12px;
+    color: #c4d8ef;
+    text-align: right;
+}
+
+.container {
+    max-width: 1100px;
+    width: 92%;
+    margin: 35px auto;
+}
+
+.welcome {
+    background: linear-gradient(120deg, #102b50, #205b91);
+    border-radius: 18px;
+    padding: 38px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.welcome span {
+    color: #9ed2ff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.welcome p {
+    color: #d5e5f5;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+.section-title {
+    margin-bottom: 18px;
+}
+
+.section-title h2 {
+    font-size: 21px;
+    color: var(--azul);
+}
+
+.section-title p {
+    color: #738096;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.areas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+.area-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 23px 17px;
+    cursor: pointer;
+    transition: .2s;
+    text-align: left;
+    min-height: 145px;
+}
+
+.area-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--celeste);
+    box-shadow: 0 7px 22px #173b6518;
+}
+
+.area-icon {
+    font-size: 26px;
+    margin-bottom: 13px;
+}
+
+.area-card h3 {
+    color: var(--azul);
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.area-card p {
+    color: #8792a3;
+    font-size: 12px;
+}
+
+.area-card .cantidad {
+    display: inline-block;
+    margin-top: 13px;
+    color: #2379bd;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.panel {
+    background: white;
+    border-radius: 17px;
+    padding: 30px;
+    box-shadow: 0 5px 25px #172e4d0c;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.volver {
+    background: transparent;
+    border: none;
+    color: #2878b9;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 23px;
+    font-size: 14px;
+}
+
+.config h2 {
+    color: var(--azul);
+    margin-bottom: 8px;
+}
+
+.config p {
+    color: #78869a;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.config label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    max-width: 300px;
+    padding: 13px;
+    border: 1px solid #d8e0e9;
+    border-radius: 9px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    background: white;
+    color: var(--texto);
+}
+
+.btn {
+    border: none;
+    padding: 13px 23px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.btn-primary {
+    background: var(--celeste);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #126ab5;
+}
+
+.btn-secondary {
+    background: #e8eef5;
+    color: var(--azul);
+}
+
+.btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.quiz-header h2 {
+    color: var(--azul);
+    font-size: 21px;
+}
+
+.progreso-texto {
+    font-size: 13px;
+    color: #748198;
+    font-weight: bold;
+}
+
+.progress {
+    height: 8px;
+    background: #e8edf3;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--celeste);
+    transition: .3s;
+}
+
+.pregunta-numero {
+    color: #2783ca;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.pregunta {
+    font-size: 21px;
+    line-height: 1.5;
+    color: var(--azul);
+    margin-bottom: 24px;
+}
+
+.opciones {
+    display: grid;
+    gap: 12px;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid #dfe6ef;
+    border-radius: 11px;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+    color: var(--texto);
+    transition: .15s;
+}
+
+.opcion:hover:not(:disabled) {
+    border-color: var(--celeste);
+    background: #f5faff;
+}
+
+.letra {
+    min-width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    background: #edf2f8;
+    color: var(--azul);
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.opcion.correcta {
+    border: 2px solid var(--verde);
+    background: #edfaf2;
+    color: #126738;
+}
+
+.opcion.correcta .letra {
+    background: var(--verde);
+    color: white;
+}
+
+.opcion.incorrecta {
+    border: 2px solid var(--rojo);
+    background: #fff1f1;
+    color: #a52323;
+}
+
+.opcion.incorrecta .letra {
+    background: var(--rojo);
+    color: white;
+}
+
+.opcion:disabled {
+    cursor: default;
+}
+
+.feedback {
+    margin-top: 20px;
+    padding: 17px;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+    display: none;
+}
+
+.feedback.ok {
+    display: block;
+    background: #edfaf2;
+    border: 1px solid #bce7ca;
+    color: #126738;
+}
+
+.feedback.error {
+    display: block;
+    background: #fff1f1;
+    border: 1px solid #f1c4c4;
+    color: #a52323;
+}
+
+.quiz-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 23px;
+}
+
+.resultado {
+    text-align: center;
+    padding: 20px 5px;
+}
+
+.resultado-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.resultado h2 {
+    color: var(--azul);
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.resultado p {
+    color: #778397;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.nota {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background: #eaf4ff;
+    border: 7px solid #d3e8fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.nota strong {
+    font-size: 38px;
+    color: var(--azul);
+}
+
+.nota span {
+    font-size: 12px;
+    color: #65758b;
+}
+
+.estadisticas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.estadistica {
+    background: #f4f7fa;
+    padding: 18px 25px;
+    border-radius: 12px;
+    min-width: 120px;
+}
+
+.estadistica strong {
+    display: block;
+    font-size: 25px;
+    color: var(--azul);
+}
+
+.estadistica span {
+    font-size: 12px;
+    color: #778397;
+}
+
+.resultado-botones {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #8994a4;
+    font-size: 12px;
+}
+
+@media(max-width: 800px) {
+    .areas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        padding: 17px 4%;
+    }
+
+    .header-label {
+        display: none;
+    }
+
+    .container {
+        margin: 22px auto;
+    }
+
+    .welcome {
+        padding: 25px;
+    }
+
+    .welcome h2 {
+        font-size: 24px;
+    }
+
+    .areas {
+        gap: 10px;
+    }
+
+    .area-card {
+        padding: 16px 12px;
+        min-height: 135px;
+    }
+
+    .panel {
+        padding: 20px 15px;
+    }
+
+    .pregunta {
+        font-size: 18px;
+    }
+}
 </style>
 </head>
+
 <body>
-<header><div class="brand">STELLANTIS <span>· RULETA LOGISTICA</span></div><div class="tag">DESAFÍO DE CONOCIMIENTOS · LOGÍSTICA</div></header>
-<main>
-<section id="home" class="panel">
-<h1>¡Poné a prueba tus conocimientos!</h1>
-<p class="sub">Elegí una categoría o jugá con todas las preguntas. Leé con atención y seleccioná una respuesta. ¡Sumá puntos y superá el desafío!</p>
-<div id="categories" class="categories"></div>
-</section>
-<section id="game" class="panel hidden">
-<div class="topline"><span id="category" class="pill"></span><span class="score" id="score">⭐ 0 puntos</span></div>
-<div class="topline"><span id="counter" class="qnum"></span><span id="remaining" class="qnum"></span></div>
-<div class="progress"><div id="bar" class="bar"></div></div>
-<div id="question" class="question"></div>
-<div id="answers" class="answers"></div>
-<div id="feedback" class="feedback"></div>
-<div class="actions"><button class="secondary" onclick="goHome()">Salir al menú</button><button id="next" class="primary" disabled onclick="nextQuestion()">Siguiente pregunta →</button></div>
-</section>
-<section id="result" class="panel result hidden">
-<div class="medal" id="medal">🏆</div><h1 id="resultTitle">¡Desafío completado!</h1>
-<div class="bigscore" id="finalScore">0/0</div>
-<p id="resultText"></p>
-<div class="actions" style="justify-content:center"><button class="primary" onclick="startGame(currentCategory)">Volver a jugar</button><button class="secondary" onclick="goHome()">Elegir otra categoría</button></div>
-</section>
+
+<header>
+    <div class="logo">
+        <div class="logo-icon">🎓</div>
+        <div>
+            <h1>STELLANTIS</h1>
+            <p>Escuelita de Capacitación</p>
+        </div>
+    </div>
+    <div class="header-label">
+        CAPACITACIÓN INTERNA<br>
+        LOGÍSTICA
+    </div>
+</header>
+
+<main class="container">
+
+    <section id="inicio">
+        <div class="welcome">
+            <span>FORMACIÓN Y DESARROLLO</span>
+            <h2>Bienvenido a la Escuelita</h2>
+            <p>
+                Poné a prueba tus conocimientos sobre las diferentes
+                áreas de Logística. Seleccioná un sector, respondé las
+                preguntas y conocé tu resultado.
+            </p>
+        </div>
+
+        <div class="section-title">
+            <h2>Seleccioná un área</h2>
+            <p>Elegí el sector sobre el que querés realizar la evaluación.</p>
+        </div>
+
+        <div class="areas" id="areas"></div>
+    </section>
+
+    <section id="configuracion" class="panel config hidden">
+        <button class="volver" onclick="volverInicio()">← Volver a las áreas</button>
+
+        <h2 id="titulo-config"></h2>
+        <p>Prepará tu evaluación antes de comenzar.</p>
+
+        <label for="cantidad">Cantidad de preguntas</label>
+        <select id="cantidad">
+            <option value="5">5 preguntas</option>
+            <option value="7" selected>7 preguntas</option>
+        </select>
+
+        <br>
+        <button class="btn btn-primary" onclick="comenzar()">
+            Comenzar evaluación →
+        </button>
+    </section>
+
+    <section id="evaluacion" class="panel hidden">
+        <div class="quiz-header">
+            <h2 id="titulo-quiz"></h2>
+            <div class="progreso-texto" id="contador"></div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" id="barra"></div>
+        </div>
+
+        <div class="pregunta-numero" id="numero-pregunta"></div>
+        <h3 class="pregunta" id="texto-pregunta"></h3>
+
+        <div class="opciones" id="opciones"></div>
+
+        <div id="feedback" class="feedback"></div>
+
+        <div class="quiz-footer">
+            <button class="btn btn-primary hidden" id="btn-siguiente"
+                onclick="siguientePregunta()">
+                Siguiente pregunta →
+            </button>
+        </div>
+    </section>
+
+    <section id="resultado" class="panel hidden">
+        <div class="resultado">
+            <div class="resultado-icon" id="resultado-icon">🏆</div>
+            <h2 id="resultado-titulo">¡Evaluación finalizada!</h2>
+            <p id="resultado-mensaje"></p>
+
+            <div class="nota">
+                <strong id="porcentaje">100%</strong>
+                <span>Resultado</span>
+            </div>
+
+            <div class="estadisticas">
+                <div class="estadistica">
+                    <strong id="aciertos">0</strong>
+                    <span>Correctas</span>
+                </div>
+                <div class="estadistica">
+                    <strong id="errores">0</strong>
+                    <span>Incorrectas</span>
+                </div>
+                <div class="estadistica">
+                    <strong id="total">0</strong>
+                    <span>Preguntas</span>
+                </div>
+            </div>
+
+            <div class="resultado-botones">
+                <button class="btn btn-primary" onclick="repetir()">
+                    ↻ Volver a intentar
+                </button>
+                <button class="btn btn-secondary" onclick="volverInicio()">
+                    Elegir otra área
+                </button>
+            </div>
+        </div>
+    </section>
+
 </main>
+
+<footer>
+    STELLANTIS | ESCUELITA DE CAPACITACIÓN<br>
+    Aprender · Evaluar · Mejorar
+</footer>
+
 <script>
-const QUESTIONS = [{"n": 1, "category": "Seguridad", "question": "¿Qué elementos de protección personal son obligatorios en el área operativa?", "options": ["Chaleco, calzado de seguridad y EPP específico del área", "Solo guantes", "Solo chaleco", "No se requiere EPP el área Logistica"], "correct": "A"}, {"n": 2, "category": "Seguridad", "question": "¿Cómo se debe utilizar un cúter de forma segura?", "options": ["Cortando hacia el cuerpo", "Cortando en dirección contraria al cuerpo y manteniendo las manos fuera de la trayectoria", "Cortar rápidamente sin verificar la posición de las manos.", "Todas son incorrectas"], "correct": "B"}, {"n": 3, "category": "Seguridad", "question": "¿Qué riesgos existen en una zona hombre-máquina?", "options": ["Golpes, atropellamientos y atrapamientos", "Solo caída de objetos pequeños", "Ningún riesgo si hay circulación señalizada", "Únicamente riesgos ergonómicos por movimientos repetitivos."], "correct": "A"}, {"n": 4, "category": "Seguridad", "question": "Si un autoelevador ingresa a tu zona de trabajo, ¿qué debés hacer?", "options": ["Continuar trabajando sin prestarle atención", "Acercarte para indicarle el donde dejar el pallet", "Dirigirme a el área segura predispuesta en cada sector.", "Todas son correctas"], "correct": "C"}, {"n": 5, "category": "Seguridad", "question": "¿Qué se considera una zona segura?", "options": ["Cualquier espacio libre dentro del depósito", "Una zona habilitada, fuera de la circulación y maniobra de equipos", "El espacio detrás de un autoelevador", "La zona de carga aunque haya equipos maniobrando"], "correct": "B"}, {"n": 6, "category": "Seguridad", "question": "¿Qué riesgo genera un pallet mal estrichado?", "options": ["Ninguno si está apoyado en el piso", "Que la carga se desplace o caiga y provoque golpes o accidentes", "Puede provocar unicamente daño del material", "Una demora productiva"], "correct": "B"}, {"n": 7, "category": "Seguridad", "question": "¿Qué debés hacer si detectás una condición insegura?", "options": ["Continuar y avisar al finalizar el turno", "Moverla sin autorización", "Detener la tarea si existe peligro, resguardarte e informar al responsable", "Ignorarla si no hubo un accidente"], "correct": "C"}, {"n": 8, "category": "Aperturado", "question": "¿Cuántas pedanas corresponden por tipo de cajón?", "options": ["Las pedanas y los cajones no tienen relación entre si ", "Siempre dos", "La cantidad indicada en el estándar de aperturado correspondiente (Tres)", "La predispuesta en mi área de trabajo"], "correct": "C"}, {"n": 9, "category": "Aperturado", "question": "¿Qué elementos se deben utilizar para realizar el aperturado?", "options": ["Cualquier herramienta disponible", "Los elementos definidos en el estándar de trabajo", "Únicamente las manos", "Herramientas personales no autorizadas"], "correct": "B"}, {"n": 10, "category": "Aperturado", "question": "¿Qué se debe verificar antes de comenzar el aperturado?", "options": ["Solo que haya espacio libre asi se apertura", "Identificación, zona segura y elementos necesarios para realizar el apertura del mismo.", "Que el cajon venga en buenas condiciones para comenzar a aperturarlo", "Ninguna es correcta"], "correct": "B"}, {"n": 11, "category": "Aperturado", "question": "¿En cuantas áreas se divide el aperturado?", "options": ["Se divide en 4 sectores (MONTAJE,CHAPA,CALIDAD,CUENTA TRABAJO)", "No tiene sectorizacion por área", "Solo en 3 (MONTAJE,UDM,CUENTA TRABAJO)", "Solo en 2 (MONTAJE,CHAPA)"], "correct": "A"}, {"n": 12, "category": "Aperturado", "question": "¿Cómo se genera un bono?", "options": ["Se genera atraves de Armazém> Consulta>Reimpresión de bono ", "Se genera atraves de Armazém>Estoque por Cim> Consulta>Reimpresión de bono ", "Se genera atraves de Gestão de Armazém> Gestão de Lote> Gestão de Lote.​", "Ninguna es correcta"], "correct": "C"}, {"n": 13, "category": "Aperturado", "question": "¿El área del aperturado cuenta con zonas delimitadas ?", "options": ["Si esta dividido según el área que corresponda el aperturado", "No,se apertura en la zona que este disponible en el momento.", "Se apertura solo si se requiere de linea.", "Ninguna de las anteriores son correctas"], "correct": "A"}, {"n": 14, "category": "Críticos", "question": "¿Por qué medios se reciben los pedidos de materiales críticos?", "options": ["Únicamente por WhatsApp", "Por Excel y llamadas de línea (TD)", "Solo mediante Excel Compartido", "Solo por llamadas de linea (HOT)"], "correct": "B"}, {"n": 15, "category": "Críticos", "question": "¿Cómo se realiza la expedición de materiales críticos?", "options": ["Se realiza el MASTERCIM del pallet,procede a realizar la carga del porta y expedición al destino correspondiente", "Dejando el material en cualquier sector para que el porta proceda a llevarlo a el área que corresponde", "Entregándolo sin realizar ningun movimiento en el sistema ", "Se  realiza la carga en el porta y se lleva directamente a linea "], "correct": "A"}, {"n": 16, "category": "Críticos", "question": "¿Cuál es la altura máxima del pallet para expedición?", "options": ["100 cm", "120 cm", "140 cm", "180 cm"], "correct": "C"}, {"n": 17, "category": "Críticos", "question": "¿Qué se debe verificar antes de expedir un material crítico?", "options": ["Solo que este realizado el MASTERCIM y que no supere 140 cm el pallet.", "Identificación, cantidad, estado y destino al que corresponda con su cambio de ubicación realizada ", "El tamaño del pallet ", "Solo que el pallet bien strechado"], "correct": "B"}, {"n": 18, "category": "Recepción", "question": "¿Qué se debe controlar al recibir un camión?", "options": ["Solo la patente", "Ingreso, documentación, condiciones de seguridad y transporte según procedimiento", "Únicamente la cantidad de pallets", "Solo el horario de llegada"], "correct": "B"}, {"n": 19, "category": "Recepción", "question": "¿Qué es la sombra en recepción?", "options": ["Un lugar para guardar elementos personales", "Zona habilitada para descargar material, buscarlo y asignarle la ubicación correspondiente", "Un espacio de circulación de autoelevadores", "Un sector de residuos"], "correct": "B"}, {"n": 20, "category": "Recepción", "question": "¿Existe relación entre Recepción y Cuenta Trabajo?", "options": ["No, son procesos independientes", "Sí, se relacionan para gestionar materiales y su flujo", "Se relaciona solo cuando se tiene que expedir el material.", "Ninguna es correcta"], "correct": "B"}, {"n": 21, "category": "Recepción", "question": "¿Cómo se debe solicitar un contenedor?", "options": ["Le damos a Desova-Desova, colocamos el contenedor y confirmamos", "Completamos los datos desde consulta de disenho, y confirmamos desde la flecha verde", "Desde Desova, seleccionamos consulta de disenho y le damos a la flecha de Acoes", "desde consulta de disenho, colocamos el codigo de remito"], "correct": "B"}, {"n": 22, "category": "Recepción", "question": "¿Qué se debe controlar al descargar un contenedor?", "options": ["Solo que esté traiga el material correspondiente", "Identificación, cantidades, estado del material y condiciones seguras de descarga", "Únicamente el retiro de precinto", "Solo el estado en el que viene el contenedor"], "correct": "B"}, {"n": 23, "category": "Recepción", "question": "¿Qué se debe verificar al descargar un camión?", "options": ["Identificación, cantidades, estado del material y condiciones seguras", "Solo el orden de llegada", "Únicamente la documentación del chofer", "Que el chofer cumpla con los EPP"], "correct": "A"}, {"n": 24, "category": "Cuenta Trabajo", "question": "¿Por qué medios se reciben los pedidos de proveedores?", "options": ["Email y Excel compartido", "Solo llamadas telefónicas", "Únicamente de manera presencial", "Únicamente por WhatsApp"], "correct": "A"}, {"n": 25, "category": "Cuenta Trabajo", "question": "¿Cómo se realiza la expedición de Cuenta Trabajo?", "options": ["Mediante Logistics, en el área Expedición; luego se comunica el número de expedición al programador para generar los remitos", "Mediante una planilla de compartida", "Solo el programador realiza la expedición directamente", "Todas son correctas"], "correct": "A"}, {"n": 26, "category": "Cuenta Trabajo", "question": "¿Cómo se distribuyen los sectores de Cuenta Trabajo?", "options": ["De manera aleatoria", "Según la distribución establecida para cada proveedor", "No tiene un lugar definido ", "Según el espacio disponible del momento, sin criterio"], "correct": "B"}, {"n": 27, "category": "Cuenta Trabajo", "question": "¿Qué se debe hacer si un pedido llega incompleto?", "options": ["Completarlo con otro material sin dar aviso", "Informar el faltante por el canal correspondiente, dejando registro e identificación", "Cerrar el pedido como completo", "Ninguna es correcta"], "correct": "B"}, {"n": 28, "category": "Cuenta Trabajo", "question": "¿Qué se debe verificar al recibir un pedido?", "options": ["Solo el embalaje", "Cantidades y fecha de entrega predeterminada.", "Únicamente el nombre del chofer", "Solo el número de pallets"], "correct": "B"}, {"n": 29, "category": "Abassamento", "question": "¿Cuándo se genera un abassamento?", "options": ["Cuando se impacta una TD de línea, la cual al abastecerla se paga", "Cada vez que cambia el turno productivo se vuelve a generar", "Solo cuando lo solicita el destino", "Al finalizar el inventario del área"], "correct": "A"}, {"n": 30, "category": "Abassamento", "question": "¿Qué debés verificar antes de atender el bono de abassamento?", "options": ["Que el CIM coincida con el abassamento solicitado", "Solo que el pallet esté bien preparado", "Que la ubicación y diseño corresponda con la caja.", "Únicamente el diseño de caja coicida con el pedido"], "correct": "A"}, {"n": 31, "category": "Abassamento", "question": "¿Qué consecuencia puede tener no atender un bono a tiempo?", "options": ["Ninguna, porque el sistema lo cancela", "Parada de línea por falta de abastecimiento y pérdidas para Logística", "Solo una diferencia de inventario", "Únicamente una demora en recepción"], "correct": "B"}, {"n": 32, "category": "Abassamento", "question": "¿Qué significa FIFO?", "options": ["Final de inventario, final de operación", "Primero en ingresar, primero en salir", "Flujo interno de fabricación y operación", "Ficha de identificación de flujo operativo"], "correct": "B"}, {"n": 33, "category": "Abassamento", "question": "¿Cuál es el objetivo del FIFO?", "options": ["Retirar primero el material que llegó último", "Asegurar que el material que ingresó primero sea el primero en salir", "Ordenar los materiales por tamaño", "Priorizar siempre el material más cercano"], "correct": "B"}, {"n": 34, "category": "Abassamento", "question": "¿Cómo se respeta el FIFO en el proceso?", "options": ["El operador elige manualmente qué CIM retirar", "El sistema lo respeta automáticamente; el operador no selecciona manualmente el CIM", "Se retira siempre el pallet más nuevo", "No se aplica FIFO en el abastecimiento"], "correct": "B"}, {"n": 35, "category": "Abassamento", "question": "Si el CIM no coincide con el abassamento, ¿qué debés hacer?", "options": ["Atender el bono igual", "Detener la atención y verificar la diferencia antes de continuar", "Cambiar el CIM por cuenta propia", "Entregar otro material similar"], "correct": "B"}, {"n": 36, "category": "Sistema", "question": "¿Qué sistemas se utilizan actualmente en el proceso?", "options": ["CLICK ", "Logistics", "PMS", "Todas son correctas"], "correct": "D"}, {"n": 37, "category": "Sistema", "question": "¿Dónde se consulta un diseño?", "options": ["En Almacén y Estoque por CIM", "En Almacén y Estoque por MASTERCIM", "En Almacén y Estoque por desenho", "En Almacén y Estoque de envio"], "correct": "A"}, {"n": 38, "category": "Sistema", "question": "¿Se puede mover material sin romper el MasterCIM?", "options": ["Sí, cuando se mueve el MasterCIM completo", "No, nunca se puede mover material", "Sí, aunque se separen piezas del MasterCIM", "Solo si se elimina el CIM"], "correct": "A"}, {"n": 39, "category": "Sistema", "question": "¿Cómo se genera un MasterCIM?", "options": ["Almacén > Estoque por CIM > Consulta; leer todos los CIM y generar el MasterCIM", "Almacén > Estoque por MASTERCIM > Consulta; leer todos los CIM y generar el MasterCIM", "Almacén > Analisis de estoque", "Ninguna es correcta"], "correct": "A"}, {"n": 40, "category": "Sistema", "question": "¿Qué es un CIM?", "options": ["La identificación única que tiene cada caja como documento", "Es el numero de diseño de la caja.", "El número de lote del material recibido.", "El código de ubicación asignado al pallet."], "correct": "A"}, {"n": 41, "category": "Sistema", "question": "¿Qué significa rientro?", "options": ["Material que vuelve a ingresar al sistema", "Material que se envía a línea por primera vez", "Material dado de baja", "Material pendiente de recepción"], "correct": "A"}, {"n": 42, "category": "Sistema", "question": "¿Cómo se genera un rientro de una pieza?", "options": ["Almacén, causal 228", "Almacén, causal 626", "Almacén, causal 226", "Ninguna es correcta"], "correct": "C"}, {"n": 43, "category": "Sistema", "question": "¿Cómo se consulta el stock mediante Logistics?", "options": ["Almacén > Consulta, ingresando el diseño de la pieza", "Almacén > Consulta, ingresando el numero de Remito", "Almacén > Consulta, ingresando CIM", "Ninguna de las anteriores son correctas"], "correct": "A"}, {"n": 44, "category": "Sistema", "question": "¿Qué significa dar de baja un CIM en este proceso?", "options": ["Pagarlo a línea", "Reingresar un diseño al sistema ", "Generar un nuevo bono para el material.", "Cambiar la ubicación del material en la estantería."], "correct": "A"}];
-const names = ["Seguridad","Aperturado","Críticos","Recepción","Cuenta Trabajo","Abassamento","Sistema"];
-const classes = ["safety","aperturado","criticos","recepcion","cuenta","abassamento","sistema"];
-const icons = ["🦺","📦","🚚","📋","🏭","🔄","💻"];
-let deck=[], index=0, points=0, answered=false, currentCategory="Todas";
-const $=id=>document.getElementById(id);
-function renderCategories(){
- const box=$("categories");
- box.innerHTML=`<button class="cat all" onclick="startGame('Todas')"><strong>🎯 Todas las categorías</strong><small>Jugar con las ${QUESTIONS.length} preguntas</small></button>`;
- names.forEach((name,i)=>{
-  const count=QUESTIONS.filter(q=>q.category===name).length;
-  box.innerHTML+=`<button class="cat ${classes[i]}" onclick="startGame('${name.replace(/'/g,"\\'")}')"><strong>${icons[i]} ${name}</strong><small>${count} preguntas</small></button>`;
- });
+
+// =====================================================
+// BANCO DE PREGUNTAS
+// 7 PREGUNTAS POR CADA ÁREA
+// =====================================================
+
+const banco = {
+
+"Seguridad": [
+{
+q:"¿Qué elementos de protección personal son obligatorios en todas las áreas?",
+o:["Solamente guantes y casco.","Chaleco y calzado de seguridad.","Solamente mangas.","Casco y protección auditiva."],
+c:1,
+e:"El chaleco y el calzado de seguridad son obligatorios en todas las áreas."
+},
+{
+q:"¿Qué elementos adicionales se utilizan en Aperturado?",
+o:["Guantes y mangas, además del chaleco y calzado de seguridad.","Solamente casco.","Solamente guantes.","Protección auditiva y casco."],
+c:0,
+e:"En Aperturado se utilizan guantes y mangas, además de los elementos generales."
+},
+{
+q:"¿Qué elemento de protección se debe utilizar para ingresar a la estantería?",
+o:["Solamente chaleco.","Guantes.","Casco.","Solamente mangas."],
+c:2,
+e:"Para ingresar a la estantería es obligatorio utilizar casco."
+},
+{
+q:"¿Qué distancia se debe respetar en la Red Zone?",
+o:["1 metro.","2 metros.","5 metros.","3 metros."],
+c:3,
+e:"Se debe respetar una distancia de 3 metros de la Red Zone."
+},
+{
+q:"¿Qué se debe realizar antes de utilizar un vehículo industrial?",
+o:["Comenzar a trabajar directamente.","Realizar el checklist del vehículo.","Consultar al sector de Calidad.","Esperar una llamada TD Hot."],
+c:1,
+e:"Antes de utilizar cualquier vehículo industrial se debe realizar su checklist."
+},
+{
+q:"¿Qué herramienta se debe utilizar para cortar el film de los pallets estrichados?",
+o:["Trincheta normal.","Tijera común.","Cúter pico de pato.","Cuchillo común."],
+c:2,
+e:"Para cortar el film se debe utilizar el cúter pico de pato y no la trincheta normal."
+},
+{
+q:"¿Qué debemos hacer cuando se aproxima un vehículo industrial?",
+o:["Continuar caminando y mirar el celular.","Caminar por cualquier sector.","Acercarnos al vehículo.","Dirigirnos a la zona segura del área, respetar las sendas y no utilizar el celular mientras caminamos."],
+c:3,
+e:"Siempre debemos caminar por las sendas, evitar el uso del celular mientras caminamos y dirigirnos a la zona segura cuando se aproxima un vehículo industrial."
 }
-function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function startGame(category){
- currentCategory=category;
- deck=shuffle(QUESTIONS.filter(q=>category==="Todas"||q.category===category).slice());
- index=0;points=0;
- $("home").classList.add("hidden");$("result").classList.add("hidden");$("game").classList.remove("hidden");
- showQuestion();
+],
+
+"Aperturado": [
+{
+q:"¿Qué elementos de protección personal se utilizan en Aperturado?",
+o:["Solamente casco.","Guantes y mangas, además de chaleco y calzado de seguridad.","Solamente guantes.","Solamente chaleco."],
+c:1,
+e:"En Aperturado se deben utilizar guantes y mangas, además del chaleco y calzado de seguridad."
+},
+{
+q:"¿Qué herramienta se utiliza para cortar el film de los pallets?",
+o:["Trincheta normal.","Tijera.","Cúter pico de pato.","Cuchillo común."],
+c:2,
+e:"El corte del film se realiza con un cúter pico de pato."
+},
+{
+q:"¿Qué se debe hacer con cada caja aperturada?",
+o:["Pegarle su correspondiente bono.","Dejarla sin identificación.","Mezclarla con otras cajas.","Enviar todas las cajas sin control."],
+c:0,
+e:"Cada caja debe tener su correspondiente bono para identificarla."
+},
+{
+q:"¿Cómo se clasifican los materiales una vez aperturados?",
+o:["Todos se envían a Montaje.","Se almacenan sin distinguir su destino.","Se separan únicamente por tamaño.","Se separan según su destino: Cuenta Trabajo, Calidad, Chapa-Pintura, Montaje y Pilkington."],
+c:3,
+e:"Los materiales se separan de acuerdo con el área a la que están destinados."
+},
+{
+q:"¿Cómo llegan los pallets a los operarios que realizan el Aperturado?",
+o:["Los retiran de los camiones.","El autoelevador lleva los pallets a cada operario.","Los trae el proveedor directamente.","Los retiran desde Montaje."],
+c:1,
+e:"El autoelevador abastece con pallets a cada uno de los operarios de Aperturado."
+},
+{
+q:"¿Para qué se genera un MasterCIM en Aperturado?",
+o:["Para dar de baja todos los materiales.","Para identificar al operario.","Para agrupar cajas de diferentes cajones y asignarles una ubicación en la estantería.","Para generar un remito."],
+c:2,
+e:"El MasterCIM permite agrupar cajas de diferentes cajones y darles una ubicación en la estantería de Aperturado."
+},
+{
+q:"¿Qué tratamiento reciben los materiales destinados a Calidad?",
+o:["Se separan porque sus bonos están bloqueados por Calidad y llevan retrabajo.","Se mezclan con los materiales de Montaje.","Se envían directamente a Cuenta Trabajo.","Se almacenan junto con todos los demás materiales."],
+c:0,
+e:"Los materiales de Calidad deben separarse por el bloqueo de sus bonos y porque llevan retrabajo."
 }
-function showQuestion(){
- answered=false;const q=deck[index];
- $("category").textContent=(q.category);$("score").textContent=`⭐ ${points} puntos`;
- $("counter").textContent=`PREGUNTA ${index+1} DE ${deck.length}`;
- $("remaining").textContent=`${deck.length-index} ${deck.length-index===1?"RESTANTE":"RESTANTES"}`;
- $("bar").style.width=`${index/deck.length*100}%`;
- $("question").textContent=q.question;
- $("feedback").className="feedback";$("feedback").textContent="";
- $("next").disabled=true;$("next").textContent=index===deck.length-1?"Ver resultado 🏁":"Siguiente pregunta →";
- $("answers").innerHTML="";
- q.options.forEach((opt,i)=>{
-  const btn=document.createElement("button");btn.className="answer";
-  btn.innerHTML=`<b>${String.fromCharCode(65+i)}.</b> ${escapeHTML(opt)}`;
-  btn.onclick=()=>chooseAnswer(i,btn);$("answers").appendChild(btn);
- });
+],
+
+"Críticos": [
+{
+q:"¿Cuál es el objetivo principal del sector Críticos?",
+o:["Descargar camiones.","Almacenar materiales sin movimiento.","Buscar materiales para abastecer pedidos de línea por falta de material.","Realizar controles de calidad."],
+c:2,
+e:"Críticos busca el material necesario para responder rápidamente a las faltas de piezas en la línea."
+},
+{
+q:"¿Qué es una llamada TD Hot?",
+o:["Un pedido de material que tiene ubicación en Montaje.","Una llamada generada por falta de una pieza sin ubicación de material en Montaje.","Un pedido de descarga de camión.","Una solicitud de cambio de turno."],
+c:1,
+e:"La llamada TD Hot se genera cuando falta una pieza y no tiene ubicación de material en Montaje."
+},
+{
+q:"¿Cómo atienden los operarios del CDC las llamadas TD Hot?",
+o:["Mediante Click.","Mediante correo electrónico.","Mediante una planilla impresa.","Esperando que el material llegue solo."],
+c:0,
+e:"Los operarios de Logística del CDC atienden las llamadas mediante Click."
+},
+{
+q:"¿Qué deben hacer los operarios después de identificar el diseño solicitado?",
+o:["Enviar cualquier material disponible.","Generar un remito.","Esperar que Montaje retire el material.","Buscar en el sistema las ubicaciones donde se encuentra el material."],
+c:3,
+e:"Una vez identificado el diseño, se consultan sus ubicaciones en el sistema para encontrar el material."
+},
+{
+q:"¿En qué sectores puede encontrarse un material solicitado por Críticos?",
+o:["Solamente en Montaje.","En la estantería, el bloque, la estantería de Aperturado y el Magazzino.","Únicamente en Recepción.","Solamente en Expedición."],
+c:1,
+e:"El material puede encontrarse en cualquiera de esos cuatro lugares."
+},
+{
+q:"¿Cuándo se debe generar un MasterCIM en Críticos?",
+o:["Siempre que llega un camión.","Cuando se realiza una consulta.","Cuando se agrupan materiales de distintos críticos.","Cada vez que se recibe un remito."],
+c:2,
+e:"Cuando se agrupan materiales de distintos críticos, se debe generar un MasterCIM."
+},
+{
+q:"¿Qué procedimiento se realiza para enviar el material agrupado hasta Montaje?",
+o:["Cambiar la ubicación del MasterCIM a KP1_MON, estrichar el pallet y enviarlo en el porta.","Dejarlo en la estantería sin modificar nada.","Enviar las cajas sueltas.","Realizar una baja de CIM."],
+c:0,
+e:"Se cambia la ubicación del MasterCIM a KP1_MON, se estricha el pallet y se envía en el porta hasta Montaje."
 }
-function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-function chooseAnswer(choice,btn){
- if(answered)return;answered=true;
- const q=deck[index], correct="ABCD".indexOf(q.correct);
- [...$("answers").children].forEach((b,i)=>{b.disabled=true;if(i===correct)b.classList.add("correct");});
- if(choice===correct){points++;$("feedback").className="feedback good";$("feedback").textContent="¡Correcto! 🎉 ¡Muy bien!";} 
- else{$("feedback").className="feedback bad";$("feedback").textContent=`No es correcto. La respuesta correcta es ${q.correct}: ${q.options[correct]}`;btn.classList.add("wrong");}
- $("score").textContent=`⭐ ${points} puntos`;$("next").disabled=false;
+],
+
+"Recepción": [
+{
+q:"¿Cuáles son las principales tareas del sector Recepción?",
+o:["Solamente descargar contenedores.","Preparar materiales para Aperturado.","Abastecer directamente a Montaje.","Realizar la carga y descarga de camiones y la descarga de contenedores."],
+c:3,
+e:"Recepción se encarga de la carga y descarga de camiones y de la descarga de contenedores."
+},
+{
+q:"¿Dónde se deben colocar temporalmente los cajones descargados de los contenedores?",
+o:["Directamente en Montaje.","En la sombra, antes de enviarlos a sus posiciones correspondientes.","En cualquier ubicación libre.","Dentro de los camiones."],
+c:1,
+e:"Los cajones se colocan temporalmente en la sombra y luego se envían a sus posiciones correspondientes."
+},
+{
+q:"¿Qué se hace después de dejar los cajones en la sombra?",
+o:["Se envían a sus posiciones correspondientes.","Se devuelven al proveedor.","Se envían todos a Calidad.","Se dejan permanentemente en ese lugar."],
+c:0,
+e:"La sombra es un lugar temporal. Desde allí los cajones se distribuyen a sus ubicaciones correspondientes."
+},
+{
+q:"¿Desde qué sistema se realiza la recepción de materiales?",
+o:["Desde Excel.","Desde Click únicamente.","Desde Logistics.","Desde el correo electrónico."],
+c:2,
+e:"La recepción de materiales se realiza desde Logistics."
+},
+{
+q:"¿Qué documentación se debe controlar durante la recepción?",
+o:["Los bonos de Aperturado.","Las llamadas TD Hot.","Los MasterCIM.","Los remitos."],
+c:3,
+e:"El control de remitos es una de las responsabilidades del sector Recepción."
+},
+{
+q:"¿Qué significan las siglas BO en las tareas de Recepción?",
+o:["Baja Operativa.","Boletín de Ocurrencia.","Base Operativa.","Bloque de Operaciones."],
+c:1,
+e:"BO significa Boletín de Ocurrencia."
+},
+{
+q:"Además del control de remitos, ¿qué otros registros realiza Recepción?",
+o:["DEM y BO (Boletín de Ocurrencia).","TD Hot y MasterCIM.","Solamente inventarios.","Únicamente expediciones."],
+c:0,
+e:"El sector también realiza las DEM y los BO."
 }
-function nextQuestion(){if(!answered)return;index++;if(index>=deck.length){showResult();return;}showQuestion();}
-function showResult(){
- $("game").classList.add("hidden");$("result").classList.remove("hidden");
- const pct=Math.round(points/deck.length*100);
- $("finalScore").textContent=`${points}/${deck.length}`;
- $("medal").textContent=pct>=85?"🏆":pct>=60?"🥇":pct>=40?"👏":"💪";
- $("resultTitle").textContent=pct>=85?"¡Excelente trabajo!":pct>=60?"¡Muy buen resultado!":pct>=40?"¡Buen intento!":"¡A seguir practicando!";
- $("resultText").textContent=`Respondiste correctamente ${points} de ${deck.length} preguntas (${pct}%). ${pct>=85?"¡Tenés un gran dominio de los temas!":"Podés volver a jugar para reforzar los conocimientos."}`;
- $("bar").style.width="100%";
+],
+
+"Cuenta Trabajo": [
+{
+q:"¿Cómo recibe Cuenta Trabajo los pedidos que debe preparar?",
+o:["Mediante llamadas TD Hot.","Directamente desde Montaje.","A través del correo electrónico (mail).","Mediante bonos verdes."],
+c:2,
+e:"Los pedidos de Cuenta Trabajo son solicitados mediante correo electrónico."
+},
+{
+q:"¿En qué sectores se puede buscar el material para preparar los pedidos?",
+o:["En Montaje y Calidad.","Solamente en Recepción.","Únicamente en Magazzino.","En la estantería, el bloque y la estantería de Aperturado."],
+c:3,
+e:"El material se busca en la estantería, el bloque y la estantería de Aperturado."
+},
+{
+q:"¿Cuál de estas opciones contiene cuentas atendidas por Cuenta Trabajo?",
+o:["Lear, CKD (Somil), F2J, Sura, UNE, Macchiarolla, OP y Cozzoul.","Solamente Lear y CKD.","Únicamente proveedores de Argentina.","Montaje, Calidad y Recepción."],
+c:0,
+e:"Esas son las cuentas que se atienden desde Cuenta Trabajo."
+},
+{
+q:"¿Qué se debe hacer una vez reunido todo el material solicitado?",
+o:["Guardarlo nuevamente en la estantería.","Generar la expedición.","Generar una llamada TD Hot.","Dejar el pedido sin registrar."],
+c:1,
+e:"Una vez reunido el material, se genera la expedición."
+},
+{
+q:"¿Quién genera el remito después de que se realiza la expedición?",
+o:["El operario de Aperturado.","El proveedor.","El programador.","El operario de Recepción."],
+c:2,
+e:"Después de generar la expedición, el programador genera el remito."
+},
+{
+q:"¿Cuál es el destino final de los pedidos preparados?",
+o:["La estantería de Aperturado.","El sector de Críticos.","La línea de Montaje.","El proveedor correspondiente."],
+c:3,
+e:"Los pedidos se envían al proveedor correspondiente."
+},
+{
+q:"¿Por qué es importante respetar los tiempos establecidos para preparar los pedidos?",
+o:["Porque permite cumplir los plazos de preparación y envío al proveedor.","Porque evita controlar los materiales.","Porque permite dejar pedidos incompletos.","Porque elimina la necesidad de generar expediciones."],
+c:0,
+e:"Cuenta Trabajo tiene tiempos determinados para preparar los pedidos y cumplir con los plazos establecidos."
 }
-function goHome(){$("game").classList.add("hidden");$("result").classList.add("hidden");$("home").classList.remove("hidden");}
-renderCategories();
+],
+
+"Abassamento": [
+{
+q:"¿Qué sucede cuando en el fijo de la línea está por agotarse el material?",
+o:["Se genera una llamada TD Hot.","Se realiza una baja de CIM.","Se dispara un bono verde en la Zebra de la oficina del CDC.","Se genera una expedición."],
+c:2,
+e:"Cuando el material del fijo está por agotarse, se dispara un bono verde en la Zebra ubicada en la oficina del CDC."
+},
+{
+q:"¿Desde dónde pueden visualizar los operarios los pedidos de Abassamento?",
+o:["Desde el correo electrónico.","Desde Click.","Desde Excel.","Desde el sistema de Calidad."],
+c:1,
+e:"Los operarios pueden visualizar los pedidos de Abassamento desde Click."
+},
+{
+q:"¿Qué hacen los operarios con el bono verde una vez que lo retiran?",
+o:["Se lo entregan al autoelevador para que baje el material desde la estantería de Aperturado.","Lo envían al proveedor.","Lo dejan en la oficina.","Lo utilizan para generar un remito."],
+c:0,
+e:"El bono se entrega al autoelevador para solicitar que baje el pallet desde la estantería de Aperturado."
+},
+{
+q:"¿De qué sector se abastece Abassamento?",
+o:["De Recepción.","Del bloque únicamente.","De Montaje.","De la estantería de Aperturado."],
+c:3,
+e:"Abassamento busca y se abastece desde la estantería de Aperturado."
+},
+{
+q:"¿Qué sucede si el material solicitado no está en la estantería de Aperturado?",
+o:["Se envía otro diseño.","No se dispara el bono de Abassamento.","Se genera automáticamente una expedición.","Se confirma el pedido igualmente."],
+c:1,
+e:"Si el material no está en la estantería de Aperturado, el bono no se dispara."
+},
+{
+q:"¿Dónde deja el autoelevador el pallet para que los operarios retiren la caja solicitada?",
+o:["En Montaje.","En la oficina del CDC.","En una pedana.","En Recepción."],
+c:2,
+e:"El autoelevador deja el pallet en una pedana para que se pueda retirar la caja solicitada."
+},
+{
+q:"¿Qué procedimiento se realiza después de retirar la caja con el diseño solicitado?",
+o:["Se pega el bono, se confirma el pedido con una colectora y se envía con un pallet a Montaje.","Se devuelve la caja a la estantería.","Se genera un MasterCIM y se envía a un proveedor.","Se realiza una baja de CIM."],
+c:0,
+e:"Se pega el bono a la caja, se confirma el pedido con la colectora y se envía con un pallet a Montaje."
+}
+],
+
+"Sistema": [
+{
+q:"¿Qué sistemas pueden utilizar los operarios para realizar las operaciones logísticas?",
+o:["Solamente Excel.","Solamente Logistics.","Únicamente Click.","Logistics y Click."],
+c:3,
+e:"Logistics y Click tienen las mismas funcionalidades para las operaciones que realizan los operarios."
+},
+{
+q:"¿Cómo se realiza una consulta de piezas por CIM o diseño en Click?",
+o:["Ingresando en Expedición.","Ingresando en Armazém > Estoque por CIM y colocando el dato para filtrar.","Ingresando en Abassamento.","Ingresando en Gestión de Personal."],
+c:1,
+e:"En Click se ingresa en Armazém > Estoque por CIM y se coloca el diseño, CIM u otro dato para filtrar."
+},
+{
+q:"¿Qué camino se debe seguir para consultar piezas en Logistics?",
+o:["Gestão de Armazém > Consulta.","Expedición > Remitos.","Abassamento > Pedidos.","Recepción > Contenedores."],
+c:0,
+e:"En Logistics se ingresa en Gestão de Armazém > Consulta."
+},
+{
+q:"¿Qué significa realizar un rientro?",
+o:["Dar de baja definitivamente un CIM.","Cambiar la ubicación de una pieza.","Volver a ingresar al sistema piezas a las que se les realizó un causal 626.","Generar un remito."],
+c:2,
+e:"El rientro permite volver a ingresar al sistema piezas a las que se les realizó un causal 626."
+},
+{
+q:"¿Qué significa realizar una baja de CIM mediante el causal 626?",
+o:["Cambiar la ubicación del material.","Generar un MasterCIM.","Realizar una consulta de piezas.","Dar de baja el CIM y sacarlo del sistema."],
+c:3,
+e:"La baja mediante causal 626 permite sacar el CIM del sistema."
+},
+{
+q:"¿Qué operaciones se pueden realizar o consultar desde Logistics y Click?",
+o:["Solamente consultas de piezas.","Consultar TD de línea, Abassamentos, pedir contenedores, generar expediciones y realizar inventarios.","Únicamente bajas de CIM.","Solamente consultar remitos."],
+c:1,
+e:"Ambos sistemas permiten realizar diferentes operaciones logísticas, como las mencionadas."
+},
+{
+q:"¿Qué información relacionada con los contenedores se puede consultar en los sistemas?",
+o:["Los contenedores que ingresan en las docas.","Solamente los contenedores vacíos.","Únicamente los contenedores de proveedores externos.","Ninguna información sobre contenedores."],
+c:0,
+e:"Se pueden consultar los contenedores que ingresan en las docas."
+}
+
+]
+};
+
+// =====================================================
+// CONFIGURACIÓN Y FUNCIONAMIENTO
+// =====================================================
+
+const iconos = {
+    "Seguridad":"🦺",
+    "Aperturado":"📦",
+    "Críticos":"🚨",
+    "Recepción":"🚛",
+    "Cuenta Trabajo":"📋",
+    "Abassamento":"🏭",
+    "Sistema":"💻"
+};
+
+let areaActual = "";
+let preguntasActuales = [];
+let indice = 0;
+let aciertos = 0;
+let respondida = false;
+
+// Crear tarjetas de áreas
+
+function crearAreas() {
+    const contenedor = document.getElementById("areas");
+
+    Object.keys(banco).forEach(area => {
+        const tarjeta = document.createElement("button");
+        tarjeta.className = "area-card";
+
+        tarjeta.innerHTML = `
+            <div class="area-icon">${iconos[area]}</div>
+            <h3>${area}</h3>
+            <p>Evaluación de conocimientos</p>
+            <span class="cantidad">7 PREGUNTAS DISPONIBLES →</span>
+        `;
+
+        tarjeta.onclick = () => seleccionarArea(area);
+        contenedor.appendChild(tarjeta);
+    });
+}
+
+function mostrar(pantalla) {
+    ["inicio","configuracion","evaluacion","resultado"].forEach(id => {
+        document.getElementById(id).classList.add("hidden");
+    });
+
+    document.getElementById(pantalla).classList.remove("hidden");
+    window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function seleccionarArea(area) {
+    areaActual = area;
+    document.getElementById("titulo-config").textContent =
+        iconos[area] + " " + area;
+
+    mostrar("configuracion");
+}
+
+function volverInicio() {
+    mostrar("inicio");
+}
+
+// Mezclar preguntas aleatoriamente
+
+function mezclar(array) {
+    const copia = [...array];
+
+    for (let i = copia.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copia[i], copia[j]] = [copia[j], copia[i]];
+    }
+
+    return copia;
+}
+
+function comenzar() {
+    const cantidad = Number(document.getElementById("cantidad").value);
+
+    preguntasActuales = mezclar(banco[areaActual]).slice(0,cantidad);
+
+    indice = 0;
+    aciertos = 0;
+    respondida = false;
+
+    document.getElementById("titulo-quiz").textContent =
+        iconos[areaActual] + " " + areaActual;
+
+    mostrar("evaluacion");
+    cargarPregunta();
+}
+
+function cargarPregunta() {
+    respondida = false;
+
+    const p = preguntasActuales[indice];
+
+    document.getElementById("contador").textContent =
+        Pregunta ${indice + 1} de ${preguntasActuales.length};
+
+    document.getElementById("barra").style.width =
+        ((indice / preguntasActuales.length) * 100) + "%";
+
+    document.getElementById("numero-pregunta").textContent =
+        "PREGUNTA " + (indice + 1);
+
+    document.getElementById("texto-pregunta").textContent = p.q;
+
+    const contenedor = document.getElementById("opciones");
+    contenedor.innerHTML = "";
+
+    ["A","B","C","D"].forEach((letra,i) => {
+        const boton = document.createElement("button");
+        boton.className = "opcion";
+
+        const identificador = document.createElement("span");
+        identificador.className = "letra";
+        identificador.textContent = letra;
+
+        const texto = document.createElement("span");
+        texto.textContent = p.o[i];
+
+        boton.appendChild(identificador);
+        boton.appendChild(texto);
+
+        boton.onclick = () => responder(i,boton);
+
+        contenedor.appendChild(boton);
+    });
+
+    const feedback = document.getElementById("feedback");
+    feedback.className = "feedback";
+    feedback.textContent = "";
+
+    const siguiente = document.getElementById("btn-siguiente");
+    siguiente.classList.add("hidden");
+
+    siguiente.textContent =
+        indice === preguntasActuales.length - 1
+        ? "Ver resultado →"
+        : "Siguiente pregunta →";
+}
+
+// Corrección inmediata
+
+function responder(opcionElegida, botonElegido) {
+    if (respondida) return;
+
+    respondida = true;
+
+    const p = preguntasActuales[indice];
+    const botones = document.querySelectorAll(".opcion");
+    const feedback = document.getElementById("feedback");
+
+    botones.forEach((boton,i) => {
+        boton.disabled = true;
+
+        if (i === p.c) {
+            boton.classList.add("correcta");
+        }
+    });
+
+    if (opcionElegida === p.c) {
+        aciertos++;
+        feedback.className = "feedback ok";
+        feedback.innerHTML =
+            "<strong>✓ ¡Respuesta correcta!</strong><br>" + p.e;
+    } else {
+        botonElegido.classList.add("incorrecta");
+
+        feedback.className = "feedback error";
+        feedback.innerHTML =
+            "<strong>✗ Respuesta incorrecta.</strong><br>" +
+            "La respuesta correcta es " +
+            ["A","B","C","D"][p.c] + ".<br>" + p.e;
+    }
+
+    const siguiente = document.getElementById("btn-siguiente");
+    siguiente.classList.remove("hidden");
+}
+
+function siguientePregunta() {
+    indice++;
+
+    if (indice < preguntasActuales.length) {
+        cargarPregunta();
+    } else {
+        finalizar();
+    }
+}
+
+// Resultado final
+
+function finalizar() {
+    const total = preguntasActuales.length;
+    const errores = total - aciertos;
+    const porcentaje = Math.round((aciertos / total) * 100);
+
+    document.getElementById("barra").style.width = "100%";
+
+    document.getElementById("porcentaje").textContent =
+        porcentaje + "%";
+
+    document.getElementById("aciertos").textContent = aciertos;
+    document.getElementById("errores").textContent = errores;
+    document.getElementById("total").textContent = total;
+
+    let titulo = "";
+    let mensaje = "";
+    let icono = "";
+
+    if (porcentaje === 100) {
+        titulo = "¡Excelente trabajo!";
+        mensaje = "¡Felicitaciones! Respondiste correctamente todas las preguntas.";
+        icono = "🏆";
+    } else if (porcentaje >= 80) {
+        titulo = "¡Muy buen trabajo!";
+        mensaje = "Demostraste un muy buen conocimiento del área.";
+        icono = "🌟";
+    } else if (porcentaje >= 60) {
+        titulo = "¡Buen intento!";
+        mensaje = "Vas por buen camino. Seguí practicando para mejorar.";
+        icono = "👏";
+    } else {
+        titulo = "Hay que seguir practicando";
+        mensaje = "Te recomendamos repasar los procedimientos del área e intentarlo nuevamente.";
+        icono = "📚";
+    }
+
+    document.getElementById("resultado-icon").textContent = icono;
+    document.getElementById("resultado-titulo").textContent = titulo;
+    document.getElementById("resultado-mensaje").textContent = mensaje;
+
+    mostrar("resultado");
+}
+
+function repetir() {
+    comenzar();
+}
+
+// Inicio
+
+crearAreas();
+
 </script>
-</body></html>
+
+</body>
+</html>
