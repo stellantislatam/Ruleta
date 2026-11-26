@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Escuelita Stellantis | Capacitación</title>
-
+ 
 <style>
 :root {
     --azul: #102b50;
@@ -15,20 +15,20 @@
     --rojo: #d93636;
     --texto: #243247;
 }
-
+ 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+ 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: var(--fondo);
     color: var(--texto);
     min-height: 100vh;
 }
-
+ 
 header {
     background: var(--azul);
     color: white;
@@ -39,13 +39,13 @@ header {
     gap: 15px;
     box-shadow: 0 3px 12px #0002;
 }
-
+ 
 .logo {
     display: flex;
     align-items: center;
     gap: 13px;
 }
-
+ 
 .logo-icon {
     width: 45px;
     height: 45px;
@@ -56,30 +56,30 @@ header {
     place-items: center;
     font-size: 23px;
 }
-
+ 
 .logo h1 {
     font-size: 19px;
     letter-spacing: 1px;
 }
-
+ 
 .logo p {
     color: #b9d6f4;
     font-size: 12px;
     margin-top: 4px;
 }
-
+ 
 .header-label {
     font-size: 12px;
     color: #c4d8ef;
     text-align: right;
 }
-
+ 
 .container {
     max-width: 1100px;
     width: 92%;
     margin: 35px auto;
 }
-
+ 
 .welcome {
     background: linear-gradient(120deg, #102b50, #205b91);
     border-radius: 18px;
@@ -87,46 +87,46 @@ header {
     color: white;
     margin-bottom: 30px;
 }
-
+ 
 .welcome span {
     color: #9ed2ff;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
 }
-
+ 
 .welcome h2 {
     font-size: 30px;
     margin: 12px 0;
 }
-
+ 
 .welcome p {
     color: #d5e5f5;
     line-height: 1.6;
     max-width: 650px;
 }
-
+ 
 .section-title {
     margin-bottom: 18px;
 }
-
+ 
 .section-title h2 {
     font-size: 21px;
     color: var(--azul);
 }
-
+ 
 .section-title p {
     color: #738096;
     font-size: 13px;
     margin-top: 6px;
 }
-
+ 
 .areas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 17px;
 }
-
+ 
 .area-card {
     background: white;
     border: 1px solid #e2e8f0;
@@ -137,29 +137,29 @@ header {
     text-align: left;
     min-height: 145px;
 }
-
+ 
 .area-card:hover {
     transform: translateY(-4px);
     border-color: var(--celeste);
     box-shadow: 0 7px 22px #173b6518;
 }
-
+ 
 .area-icon {
     font-size: 26px;
     margin-bottom: 13px;
 }
-
+ 
 .area-card h3 {
     color: var(--azul);
     font-size: 16px;
     margin-bottom: 7px;
 }
-
+ 
 .area-card p {
     color: #8792a3;
     font-size: 12px;
 }
-
+ 
 .area-card .cantidad {
     display: inline-block;
     margin-top: 13px;
@@ -167,18 +167,18 @@ header {
     font-size: 11px;
     font-weight: bold;
 }
-
+ 
 .panel {
     background: white;
     border-radius: 17px;
     padding: 30px;
     box-shadow: 0 5px 25px #172e4d0c;
 }
-
+ 
 .hidden {
     display: none !important;
 }
-
+ 
 .volver {
     background: transparent;
     border: none;
@@ -188,25 +188,25 @@ header {
     margin-bottom: 23px;
     font-size: 14px;
 }
-
+ 
 .config h2 {
     color: var(--azul);
     margin-bottom: 8px;
 }
-
+ 
 .config p {
     color: #78869a;
     font-size: 14px;
     margin-bottom: 25px;
 }
-
+ 
 .config label {
     display: block;
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 10px;
 }
-
+ 
 select {
     width: 100%;
     max-width: 300px;
@@ -218,7 +218,7 @@ select {
     background: white;
     color: var(--texto);
 }
-
+ 
 .btn {
     border: none;
     padding: 13px 23px;
@@ -228,26 +228,26 @@ select {
     font-weight: bold;
     transition: .2s;
 }
-
+ 
 .btn-primary {
     background: var(--celeste);
     color: white;
 }
-
+ 
 .btn-primary:hover {
     background: #126ab5;
 }
-
+ 
 .btn-secondary {
     background: #e8eef5;
     color: var(--azul);
 }
-
+ 
 .btn:disabled {
     opacity: .5;
     cursor: not-allowed;
 }
-
+ 
 .quiz-header {
     display: flex;
     justify-content: space-between;
@@ -256,18 +256,18 @@ select {
     gap: 12px;
     margin-bottom: 22px;
 }
-
+ 
 .quiz-header h2 {
     color: var(--azul);
     font-size: 21px;
 }
-
+ 
 .progreso-texto {
     font-size: 13px;
     color: #748198;
     font-weight: bold;
 }
-
+ 
 .progress {
     height: 8px;
     background: #e8edf3;
@@ -275,13 +275,13 @@ select {
     overflow: hidden;
     margin-bottom: 28px;
 }
-
+ 
 .progress-bar {
     height: 100%;
     background: var(--celeste);
     transition: .3s;
 }
-
+ 
 .pregunta-numero {
     color: #2783ca;
     font-size: 12px;
@@ -289,19 +289,19 @@ select {
     margin-bottom: 12px;
     text-transform: uppercase;
 }
-
+ 
 .pregunta {
     font-size: 21px;
     line-height: 1.5;
     color: var(--azul);
     margin-bottom: 24px;
 }
-
+ 
 .opciones {
     display: grid;
     gap: 12px;
 }
-
+ 
 .opcion {
     display: flex;
     align-items: center;
@@ -317,12 +317,12 @@ select {
     color: var(--texto);
     transition: .15s;
 }
-
+ 
 .opcion:hover:not(:disabled) {
     border-color: var(--celeste);
     background: #f5faff;
 }
-
+ 
 .letra {
     min-width: 32px;
     height: 32px;
@@ -333,33 +333,33 @@ select {
     font-weight: bold;
     border-radius: 8px;
 }
-
+ 
 .opcion.correcta {
     border: 2px solid var(--verde);
     background: #edfaf2;
     color: #126738;
 }
-
+ 
 .opcion.correcta .letra {
     background: var(--verde);
     color: white;
 }
-
+ 
 .opcion.incorrecta {
     border: 2px solid var(--rojo);
     background: #fff1f1;
     color: #a52323;
 }
-
+ 
 .opcion.incorrecta .letra {
     background: var(--rojo);
     color: white;
 }
-
+ 
 .opcion:disabled {
     cursor: default;
 }
-
+ 
 .feedback {
     margin-top: 20px;
     padding: 17px;
@@ -368,49 +368,49 @@ select {
     font-size: 14px;
     display: none;
 }
-
+ 
 .feedback.ok {
     display: block;
     background: #edfaf2;
     border: 1px solid #bce7ca;
     color: #126738;
 }
-
+ 
 .feedback.error {
     display: block;
     background: #fff1f1;
     border: 1px solid #f1c4c4;
     color: #a52323;
 }
-
+ 
 .quiz-footer {
     display: flex;
     justify-content: flex-end;
     margin-top: 23px;
 }
-
+ 
 .resultado {
     text-align: center;
     padding: 20px 5px;
 }
-
+ 
 .resultado-icon {
     font-size: 55px;
     margin-bottom: 15px;
 }
-
+ 
 .resultado h2 {
     color: var(--azul);
     font-size: 27px;
     margin-bottom: 10px;
 }
-
+ 
 .resultado p {
     color: #778397;
     margin-bottom: 25px;
     line-height: 1.5;
 }
-
+ 
 .nota {
     width: 145px;
     height: 145px;
@@ -423,17 +423,17 @@ select {
     align-items: center;
     margin: 25px auto;
 }
-
+ 
 .nota strong {
     font-size: 38px;
     color: var(--azul);
 }
-
+ 
 .nota span {
     font-size: 12px;
     color: #65758b;
 }
-
+ 
 .estadisticas {
     display: flex;
     justify-content: center;
@@ -441,25 +441,25 @@ select {
     margin: 25px 0;
     flex-wrap: wrap;
 }
-
+ 
 .estadistica {
     background: #f4f7fa;
     padding: 18px 25px;
     border-radius: 12px;
     min-width: 120px;
 }
-
+ 
 .estadistica strong {
     display: block;
     font-size: 25px;
     color: var(--azul);
 }
-
+ 
 .estadistica span {
     font-size: 12px;
     color: #778397;
 }
-
+ 
 .resultado-botones {
     display: flex;
     justify-content: center;
@@ -467,194 +467,194 @@ select {
     flex-wrap: wrap;
     margin-top: 25px;
 }
-
+ 
 footer {
     text-align: center;
     padding: 25px;
     color: #8994a4;
     font-size: 12px;
 }
-
+ 
 @media(max-width: 800px) {
     .areas {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+ 
 @media(max-width: 500px) {
     header {
         padding: 17px 4%;
     }
-
+ 
     .header-label {
         display: none;
     }
-
+ 
     .container {
         margin: 22px auto;
     }
-
+ 
     .welcome {
         padding: 25px;
     }
-
+ 
     .welcome h2 {
         font-size: 24px;
     }
-
+ 
     .areas {
         gap: 10px;
     }
-
+ 
     .area-card {
         padding: 16px 12px;
         min-height: 135px;
     }
-
+ 
     .panel {
         padding: 20px 15px;
     }
-
+ 
     .pregunta {
         font-size: 18px;
     }
 }
 </style>
 </head>
-
+ 
 <body>
-
+ 
 <header>
-    <div class="logo">
-        <div class="logo-icon">🎓</div>
-        <div>
-            <h1>STELLANTIS</h1>
-            <p>Escuelita de Capacitación</p>
-        </div>
-    </div>
-    <div class="header-label">
+<div class="logo">
+<div class="logo-icon">🎓</div>
+<div>
+<h1>STELLANTIS</h1>
+<p>Escuelita de Capacitación</p>
+</div>
+</div>
+<div class="header-label">
         CAPACITACIÓN INTERNA<br>
         LOGÍSTICA
-    </div>
+</div>
 </header>
-
+ 
 <main class="container">
-
+ 
     <section id="inicio">
-        <div class="welcome">
-            <span>FORMACIÓN Y DESARROLLO</span>
-            <h2>Bienvenido a la Escuelita</h2>
-            <p>
+<div class="welcome">
+<span>FORMACIÓN Y DESARROLLO</span>
+<h2>Bienvenido a la Escuelita</h2>
+<p>
                 Poné a prueba tus conocimientos sobre las diferentes
                 áreas de Logística. Seleccioná un sector, respondé las
                 preguntas y conocé tu resultado.
-            </p>
-        </div>
-
+</p>
+</div>
+ 
         <div class="section-title">
-            <h2>Seleccioná un área</h2>
-            <p>Elegí el sector sobre el que querés realizar la evaluación.</p>
-        </div>
-
+<h2>Seleccioná un área</h2>
+<p>Elegí el sector sobre el que querés realizar la evaluación.</p>
+</div>
+ 
         <div class="areas" id="areas"></div>
-    </section>
-
+</section>
+ 
     <section id="configuracion" class="panel config hidden">
-        <button class="volver" onclick="volverInicio()">← Volver a las áreas</button>
-
+<button class="volver" onclick="volverInicio()">← Volver a las áreas</button>
+ 
         <h2 id="titulo-config"></h2>
-        <p>Prepará tu evaluación antes de comenzar.</p>
-
+<p>Prepará tu evaluación antes de comenzar.</p>
+ 
         <label for="cantidad">Cantidad de preguntas</label>
-        <select id="cantidad">
-            <option value="5">5 preguntas</option>
-            <option value="7" selected>7 preguntas</option>
-        </select>
-
+<select id="cantidad">
+<option value="5">5 preguntas</option>
+<option value="7" selected>7 preguntas</option>
+</select>
+ 
         <br>
-        <button class="btn btn-primary" onclick="comenzar()">
+<button class="btn btn-primary" onclick="comenzar()">
             Comenzar evaluación →
-        </button>
-    </section>
-
+</button>
+</section>
+ 
     <section id="evaluacion" class="panel hidden">
-        <div class="quiz-header">
-            <h2 id="titulo-quiz"></h2>
-            <div class="progreso-texto" id="contador"></div>
-        </div>
-
+<div class="quiz-header">
+<h2 id="titulo-quiz"></h2>
+<div class="progreso-texto" id="contador"></div>
+</div>
+ 
         <div class="progress">
-            <div class="progress-bar" id="barra"></div>
-        </div>
-
+<div class="progress-bar" id="barra"></div>
+</div>
+ 
         <div class="pregunta-numero" id="numero-pregunta"></div>
-        <h3 class="pregunta" id="texto-pregunta"></h3>
-
+<h3 class="pregunta" id="texto-pregunta"></h3>
+ 
         <div class="opciones" id="opciones"></div>
-
+ 
         <div id="feedback" class="feedback"></div>
-
+ 
         <div class="quiz-footer">
-            <button class="btn btn-primary hidden" id="btn-siguiente"
+<button class="btn btn-primary hidden" id="btn-siguiente"
                 onclick="siguientePregunta()">
                 Siguiente pregunta →
-            </button>
-        </div>
-    </section>
-
+</button>
+</div>
+</section>
+ 
     <section id="resultado" class="panel hidden">
-        <div class="resultado">
-            <div class="resultado-icon" id="resultado-icon">🏆</div>
-            <h2 id="resultado-titulo">¡Evaluación finalizada!</h2>
-            <p id="resultado-mensaje"></p>
-
+<div class="resultado">
+<div class="resultado-icon" id="resultado-icon">🏆</div>
+<h2 id="resultado-titulo">¡Evaluación finalizada!</h2>
+<p id="resultado-mensaje"></p>
+ 
             <div class="nota">
-                <strong id="porcentaje">100%</strong>
-                <span>Resultado</span>
-            </div>
-
+<strong id="porcentaje">100%</strong>
+<span>Resultado</span>
+</div>
+ 
             <div class="estadisticas">
-                <div class="estadistica">
-                    <strong id="aciertos">0</strong>
-                    <span>Correctas</span>
-                </div>
-                <div class="estadistica">
-                    <strong id="errores">0</strong>
-                    <span>Incorrectas</span>
-                </div>
-                <div class="estadistica">
-                    <strong id="total">0</strong>
-                    <span>Preguntas</span>
-                </div>
-            </div>
-
+<div class="estadistica">
+<strong id="aciertos">0</strong>
+<span>Correctas</span>
+</div>
+<div class="estadistica">
+<strong id="errores">0</strong>
+<span>Incorrectas</span>
+</div>
+<div class="estadistica">
+<strong id="total">0</strong>
+<span>Preguntas</span>
+</div>
+</div>
+ 
             <div class="resultado-botones">
-                <button class="btn btn-primary" onclick="repetir()">
+<button class="btn btn-primary" onclick="repetir()">
                     ↻ Volver a intentar
-                </button>
-                <button class="btn btn-secondary" onclick="volverInicio()">
+</button>
+<button class="btn btn-secondary" onclick="volverInicio()">
                     Elegir otra área
-                </button>
-            </div>
-        </div>
-    </section>
-
+</button>
+</div>
+</div>
+</section>
+ 
 </main>
-
+ 
 <footer>
     STELLANTIS | ESCUELITA DE CAPACITACIÓN<br>
     Aprender · Evaluar · Mejorar
 </footer>
-
+ 
 <script>
-
+ 
 // =====================================================
 // BANCO DE PREGUNTAS
 // 7 PREGUNTAS POR CADA ÁREA
 // =====================================================
-
+ 
 const banco = {
-
+ 
 "Seguridad": [
 {
 q:"¿Qué elementos de protección personal son obligatorios en todas las áreas?",
@@ -699,7 +699,7 @@ c:3,
 e:"Siempre debemos caminar por las sendas, evitar el uso del celular mientras caminamos y dirigirnos a la zona segura cuando se aproxima un vehículo industrial."
 }
 ],
-
+ 
 "Aperturado": [
 {
 q:"¿Qué elementos de protección personal se utilizan en Aperturado?",
@@ -744,7 +744,7 @@ c:0,
 e:"Los materiales de Calidad deben separarse por el bloqueo de sus bonos y porque llevan retrabajo."
 }
 ],
-
+ 
 "Críticos": [
 {
 q:"¿Cuál es el objetivo principal del sector Críticos?",
@@ -789,7 +789,7 @@ c:0,
 e:"Se cambia la ubicación del MasterCIM a KP1_MON, se estricha el pallet y se envía en el porta hasta Montaje."
 }
 ],
-
+ 
 "Recepción": [
 {
 q:"¿Cuáles son las principales tareas del sector Recepción?",
@@ -834,7 +834,7 @@ c:0,
 e:"El sector también realiza las DEM y los BO."
 }
 ],
-
+ 
 "Cuenta Trabajo": [
 {
 q:"¿Cómo recibe Cuenta Trabajo los pedidos que debe preparar?",
@@ -879,7 +879,7 @@ c:0,
 e:"Cuenta Trabajo tiene tiempos determinados para preparar los pedidos y cumplir con los plazos establecidos."
 }
 ],
-
+ 
 "Abassamento": [
 {
 q:"¿Qué sucede cuando en el fijo de la línea está por agotarse el material?",
@@ -924,7 +924,7 @@ c:0,
 e:"Se pega el bono a la caja, se confirma el pedido con la colectora y se envía con un pallet a Montaje."
 }
 ],
-
+ 
 "Sistema": [
 {
 q:"¿Qué sistemas pueden utilizar los operarios para realizar las operaciones logísticas?",
@@ -968,14 +968,14 @@ o:["Los contenedores que ingresan en las docas.","Solamente los contenedores vac
 c:0,
 e:"Se pueden consultar los contenedores que ingresan en las docas."
 }
-
+ 
 ]
 };
-
+ 
 // =====================================================
 // CONFIGURACIÓN Y FUNCIONAMIENTO
 // =====================================================
-
+ 
 const iconos = {
     "Seguridad":"🦺",
     "Aperturado":"📦",
@@ -985,154 +985,154 @@ const iconos = {
     "Abassamento":"🏭",
     "Sistema":"💻"
 };
-
+ 
 let areaActual = "";
 let preguntasActuales = [];
 let indice = 0;
 let aciertos = 0;
 let respondida = false;
-
+ 
 // Crear tarjetas de áreas
-
+ 
 function crearAreas() {
     const contenedor = document.getElementById("areas");
-
+ 
     Object.keys(banco).forEach(area => {
         const tarjeta = document.createElement("button");
         tarjeta.className = "area-card";
-
+ 
         tarjeta.innerHTML = `
-            <div class="area-icon">${iconos[area]}</div>
-            <h3>${area}</h3>
-            <p>Evaluación de conocimientos</p>
-            <span class="cantidad">7 PREGUNTAS DISPONIBLES →</span>
+<div class="area-icon">${iconos[area]}</div>
+<h3>${area}</h3>
+<p>Evaluación de conocimientos</p>
+<span class="cantidad">7 PREGUNTAS DISPONIBLES →</span>
         `;
-
+ 
         tarjeta.onclick = () => seleccionarArea(area);
         contenedor.appendChild(tarjeta);
     });
 }
-
+ 
 function mostrar(pantalla) {
     ["inicio","configuracion","evaluacion","resultado"].forEach(id => {
         document.getElementById(id).classList.add("hidden");
     });
-
+ 
     document.getElementById(pantalla).classList.remove("hidden");
     window.scrollTo({top:0,behavior:"smooth"});
 }
-
+ 
 function seleccionarArea(area) {
     areaActual = area;
     document.getElementById("titulo-config").textContent =
         iconos[area] + " " + area;
-
+ 
     mostrar("configuracion");
 }
-
+ 
 function volverInicio() {
     mostrar("inicio");
 }
-
+ 
 // Mezclar preguntas aleatoriamente
-
+ 
 function mezclar(array) {
     const copia = [...array];
-
+ 
     for (let i = copia.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [copia[i], copia[j]] = [copia[j], copia[i]];
     }
-
+ 
     return copia;
 }
-
+ 
 function comenzar() {
     const cantidad = Number(document.getElementById("cantidad").value);
-
+ 
     preguntasActuales = mezclar(banco[areaActual]).slice(0,cantidad);
-
+ 
     indice = 0;
     aciertos = 0;
     respondida = false;
-
+ 
     document.getElementById("titulo-quiz").textContent =
         iconos[areaActual] + " " + areaActual;
-
+ 
     mostrar("evaluacion");
     cargarPregunta();
 }
-
+ 
 function cargarPregunta() {
     respondida = false;
-
+ 
     const p = preguntasActuales[indice];
-
+ 
     document.getElementById("contador").textContent =
-        Pregunta ${indice + 1} de ${preguntasActuales.length};
-
+        `Pregunta ${indice + 1} de ${preguntasActuales.length}`;
+ 
     document.getElementById("barra").style.width =
         ((indice / preguntasActuales.length) * 100) + "%";
-
+ 
     document.getElementById("numero-pregunta").textContent =
         "PREGUNTA " + (indice + 1);
-
+ 
     document.getElementById("texto-pregunta").textContent = p.q;
-
+ 
     const contenedor = document.getElementById("opciones");
     contenedor.innerHTML = "";
-
+ 
     ["A","B","C","D"].forEach((letra,i) => {
         const boton = document.createElement("button");
         boton.className = "opcion";
-
+ 
         const identificador = document.createElement("span");
         identificador.className = "letra";
         identificador.textContent = letra;
-
+ 
         const texto = document.createElement("span");
         texto.textContent = p.o[i];
-
+ 
         boton.appendChild(identificador);
         boton.appendChild(texto);
-
+ 
         boton.onclick = () => responder(i,boton);
-
+ 
         contenedor.appendChild(boton);
     });
-
+ 
     const feedback = document.getElementById("feedback");
     feedback.className = "feedback";
     feedback.textContent = "";
-
+ 
     const siguiente = document.getElementById("btn-siguiente");
     siguiente.classList.add("hidden");
-
+ 
     siguiente.textContent =
         indice === preguntasActuales.length - 1
         ? "Ver resultado →"
         : "Siguiente pregunta →";
 }
-
+ 
 // Corrección inmediata
-
+ 
 function responder(opcionElegida, botonElegido) {
     if (respondida) return;
-
+ 
     respondida = true;
-
+ 
     const p = preguntasActuales[indice];
     const botones = document.querySelectorAll(".opcion");
     const feedback = document.getElementById("feedback");
-
+ 
     botones.forEach((boton,i) => {
         boton.disabled = true;
-
+ 
         if (i === p.c) {
             boton.classList.add("correcta");
         }
     });
-
+ 
     if (opcionElegida === p.c) {
         aciertos++;
         feedback.className = "feedback ok";
@@ -1140,48 +1140,48 @@ function responder(opcionElegida, botonElegido) {
             "<strong>✓ ¡Respuesta correcta!</strong><br>" + p.e;
     } else {
         botonElegido.classList.add("incorrecta");
-
+ 
         feedback.className = "feedback error";
         feedback.innerHTML =
             "<strong>✗ Respuesta incorrecta.</strong><br>" +
             "La respuesta correcta es " +
             ["A","B","C","D"][p.c] + ".<br>" + p.e;
     }
-
+ 
     const siguiente = document.getElementById("btn-siguiente");
     siguiente.classList.remove("hidden");
 }
-
+ 
 function siguientePregunta() {
     indice++;
-
+ 
     if (indice < preguntasActuales.length) {
         cargarPregunta();
     } else {
         finalizar();
     }
 }
-
+ 
 // Resultado final
-
+ 
 function finalizar() {
     const total = preguntasActuales.length;
     const errores = total - aciertos;
     const porcentaje = Math.round((aciertos / total) * 100);
-
+ 
     document.getElementById("barra").style.width = "100%";
-
+ 
     document.getElementById("porcentaje").textContent =
         porcentaje + "%";
-
+ 
     document.getElementById("aciertos").textContent = aciertos;
     document.getElementById("errores").textContent = errores;
     document.getElementById("total").textContent = total;
-
+ 
     let titulo = "";
     let mensaje = "";
     let icono = "";
-
+ 
     if (porcentaje === 100) {
         titulo = "¡Excelente trabajo!";
         mensaje = "¡Felicitaciones! Respondiste correctamente todas las preguntas.";
@@ -1199,23 +1199,23 @@ function finalizar() {
         mensaje = "Te recomendamos repasar los procedimientos del área e intentarlo nuevamente.";
         icono = "📚";
     }
-
+ 
     document.getElementById("resultado-icon").textContent = icono;
     document.getElementById("resultado-titulo").textContent = titulo;
     document.getElementById("resultado-mensaje").textContent = mensaje;
-
+ 
     mostrar("resultado");
 }
-
+ 
 function repetir() {
     comenzar();
 }
-
+ 
 // Inicio
-
+ 
 crearAreas();
-
+ 
 </script>
-
+ 
 </body>
 </html>
